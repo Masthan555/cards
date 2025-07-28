@@ -1,0 +1,25 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: cards
+  datasource:
+    url: jdbc:mysql://localhost:3309/cardsdb
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  config:
+    import: "optional:configserver:http://localhost:8888/"
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
