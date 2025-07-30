@@ -132,7 +132,7 @@
 				<version>3.4.6</version>
 				<configuration>
 					<to>
-						<image>masthansoma/${project.artifactId}:v2</image>
+						<image>masthansoma/${project.artifactId}:v3</image>
 					</to>
 				</configuration>
 			</plugin>
