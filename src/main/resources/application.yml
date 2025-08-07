@@ -50,6 +50,14 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8070/eureka/
 
+logging:
+  level:
+    com:
+      eazybytes:
+        cards: DEBUG
+  pattern:
+    level: "%5p [${spring.application.name},%X{trace_id},%X{span_id}]"
+
 endpoints:
   shutdown:
     enabled: true
